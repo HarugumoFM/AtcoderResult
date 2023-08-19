@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace AtcoderResult.ABC315
 {
-    internal class E315
+    internal class e
     {
          Dictionary<int, HashSet<int>> graph;
          HashSet<int> visit;
