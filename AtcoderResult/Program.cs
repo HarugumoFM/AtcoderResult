@@ -1,5 +1,8 @@
-﻿using AtcoderResult.ABC315;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using AtcoderResult.ABC308;
 
-var I = new c();
+var inst = new d();
 
-c.Main();
+d.Main();
