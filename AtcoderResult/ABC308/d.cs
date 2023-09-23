@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace AtcoderResult.ABC308 {
-
-
-    class d{
+    internal class D{
         static Dictionary<int, HashSet<int>> list;
         static bool[] visit;
         public static void Main() {

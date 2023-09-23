@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using AtcoderResult.ABC308;
+using AtcoderResult.ABC329;
+//Atcoderテストコード実行ゾーン
 
-var inst = new d();
-
-d.Main();
+D.Main();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AtcoderResult.ABC315
 {
-    internal class c
+    internal class C
     {
         public static void Main()
         {

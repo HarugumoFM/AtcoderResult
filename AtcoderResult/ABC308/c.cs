@@ -6,7 +6,7 @@ using System.Linq;
 namespace AtcoderResult.ABC308
 {
 
-    internal class c 
+    internal class C 
     {  
         public static void Main() 
         {
