@@ -8,7 +8,7 @@ namespace AtcoderResult.ABC322
     {
         public static void Main()
         {
-            var line = Console.ReadLine().Split();
+            var line = Console.ReadLine()!.Split();
 
             int N = Int32.Parse(line[0]);
             int K = Int32.Parse(line[1]);
@@ -19,7 +19,7 @@ namespace AtcoderResult.ABC322
                 var item = new long[N,2];
                 long s = 0;
                 for(int i=0;i<N;i++) {
-                    line = Console.ReadLine().Split();
+                    line = Console.ReadLine()!.Split();
                     item[i,0] = Int64.Parse(line[0]);
                     item[i,1] = Int64.Parse(line[1]);
                     max += item[i,0];
@@ -48,7 +48,7 @@ namespace AtcoderResult.ABC322
                 long p1 =0;
                 long p2 =0;
                 for(int i=0;i<N;i++) {
-                    line = Console.ReadLine().Split();
+                    line = Console.ReadLine()!.Split();
                     item[i,0] = Int64.Parse(line[0]);
                     item[i,1] = Int64.Parse(line[1]);
                     item[i,2] = Int64.Parse(line[2]);
@@ -89,7 +89,7 @@ namespace AtcoderResult.ABC322
                 long p2 = 0;
                 long p3 = 0;
                 for(int i=0;i<N;i++) {
-                    line = Console.ReadLine().Split();
+                    line = Console.ReadLine()!.Split();
                     item[i,0] = Int64.Parse(line[0]);
                     item[i,1] = Int64.Parse(line[1]);
                     item[i,2] = Int64.Parse(line[2]);
@@ -139,7 +139,7 @@ namespace AtcoderResult.ABC322
                 long p3 = 0;
                 long p4 = 0;
                 for(int i=0;i<N;i++) {
-                    line = Console.ReadLine().Split();
+                    line = Console.ReadLine()!.Split();
                     item[i,0] = Int64.Parse(line[0]);
                     item[i,1] = Int64.Parse(line[1]);
                     item[i,2] = Int64.Parse(line[2]);
@@ -198,7 +198,7 @@ namespace AtcoderResult.ABC322
                 long p4 = 0;
                 long p5 = 0;
                 for(int i=0;i<N;i++) {
-                    line = Console.ReadLine().Split();
+                    line = Console.ReadLine()!.Split();
                     item[i,0] = Int64.Parse(line[0]);
                     item[i,1] = Int64.Parse(line[1]);
                     item[i,2] = Int64.Parse(line[2]);
