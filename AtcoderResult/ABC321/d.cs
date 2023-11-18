@@ -1,4 +1,4 @@
-namespace AtcoderResult.ABC329;
+namespace AtcoderResult.ABC321;
 
 using System;
 using System.Collections.Generic;
