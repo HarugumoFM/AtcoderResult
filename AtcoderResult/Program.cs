@@ -1,3 +1,3 @@
-﻿using AtcoderResult.ADT.M20231128;
+﻿using AtcoderResult.ABC331;
 
-G.Main();
+E.Main();
