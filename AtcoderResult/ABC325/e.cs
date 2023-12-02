@@ -1,8 +1,8 @@
 namespace AtcoderResult.ABC325
 {
-    internal class E
+    class E
     {
-        public static void Main()
+        public static void Solve()
         {
             var nums = Console.ReadLine()!.Split();
             int N = Int32.Parse(nums[0]);

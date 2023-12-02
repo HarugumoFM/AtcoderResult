@@ -1,7 +1,7 @@
 namespace AtcoderResult.ABC327;
 
-internal class C{
-    public static void Main()
+class C{
+    public static void Solve()
     {
         var A = new int[9,9];
         for(int i=0;i<9;i++) {

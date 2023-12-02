@@ -2,7 +2,7 @@ namespace AtcoderResult.ABC331;
 
 class E {
 
-    public static void Main()
+    public static void Solve()
     {
             var line = Console.ReadLine()!.Split();
         int N = Int32.Parse(line[0]);

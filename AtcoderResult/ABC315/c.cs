@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace AtcoderResult.ABC315
 {
-    internal class C
+    class C
     {
-        public static void Main()
+        public static void Solve()
         {
 
-            var N = Int32.Parse(Console.ReadLine());
+            var N = Int32.Parse(Console.ReadLine()!);
 
             var ices = new Dictionary<int, List<int>>();
             var Lices = new Dictionary<int, int>();
 
             for (int i = 0; i < N; i++)
             {
-                var lines = Console.ReadLine().Split();
+                var lines = Console.ReadLine()!.Split();
                 int p = Int32.Parse(lines[0]);
                 int t = Int32.Parse(lines[1]);
 

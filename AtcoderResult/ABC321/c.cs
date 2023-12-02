@@ -1,13 +1,12 @@
 namespace AtcoderResult.ABC321;
 
 using System;
-using System.Collections.Generic;
 
-internal class C
+class C
 {
-    public static void Main()
+    public static void Solve()
     {
-        int K = Int32.Parse(Console.ReadLine());
+        int K = Int32.Parse(Console.ReadLine()!);
         Console.WriteLine(answer(K));
 
         long answer(int K){
@@ -116,7 +115,6 @@ internal class C
 
         bool check(int N) {
         int last = -1;
-        int mask = 10;
         bool res = true;
         var num = N;
         for(int i=1;i<=10;i++) {

@@ -1,7 +1,7 @@
 namespace AtcoderResult.ADT.M20231128;
 
 internal class F{
-    public static void Main()
+    public static void Solve()
     {
         var line = Console.ReadLine()!.Split();
 

@@ -1,7 +1,7 @@
 namespace AtcoderResult.ABC330;
 
-internal class D{
-    public static void Main()
+class D{
+    public static void Solve()
     {
         var N = Int32.Parse(Console.ReadLine()!);
 

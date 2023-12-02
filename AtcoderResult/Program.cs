@@ -1,3 +1,4 @@
 ﻿using AtcoderResult.ABC331;
 
-E.Main();
+
+E.Solve();

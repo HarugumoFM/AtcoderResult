@@ -6,14 +6,14 @@ using System.Linq;
 namespace AtcoderResult.ABC308
 {
 
-    internal class C 
+    class C 
     {  
-        public static void Main() 
+        public static void Solve() 
         {
-            int N = Int32.Parse(Console.ReadLine());
+            int N = Int32.Parse(Console.ReadLine()!);
             var list = new List<Person>();
             for(long i=1;i<=N;i++) {
-                var lines = Console.ReadLine().Split();
+                var lines = Console.ReadLine()!.Split();
                 long a = Int64.Parse(lines[0]);
                 long b = Int64.Parse(lines[1]);
 

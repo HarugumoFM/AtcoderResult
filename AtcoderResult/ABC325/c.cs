@@ -1,8 +1,8 @@
 namespace AtcoderResult.ABC325
 {
-    internal class C 
+    class C 
     {
-        public static void Main()
+        public static void Solve()
         {
             var dic = new Dictionary<int, HashSet<int>>();
 

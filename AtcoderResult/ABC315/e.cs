@@ -4,21 +4,21 @@ using System.Linq;
 
 namespace AtcoderResult.ABC315
 {
-    internal class E
+    class E
     {
          Dictionary<int, HashSet<int>> graph;
          HashSet<int> visit;
 
-        public void Main()
+        public void Solve()
         {
             graph = new Dictionary<int, HashSet<int>>();
             visit = new HashSet<int>();
 
-            var N = Int32.Parse(Console.ReadLine());
+            var N = Int32.Parse(Console.ReadLine()!);
             for (int i = 1; i <= N; i++)
             {
                 var list = new HashSet<int>();
-                var lines = Console.ReadLine().Split();
+                var lines = Console.ReadLine()!.Split();
                 var num = Int32.Parse(lines[0]);
                 if (num > 0)
                 {

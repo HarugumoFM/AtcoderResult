@@ -1,7 +1,7 @@
 namespace AtcoderResult.ABC328;
 
-internal class C{
-    public static void Main()
+class C{
+    public static void Solve()
     {
         var line= Console.ReadLine()!.Split();
 

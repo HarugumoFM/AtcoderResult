@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace AtcoderResult.ABC308 {
-    internal class D{
+    class D{
         static Dictionary<int, HashSet<int>> list;
         static bool[] visit;
-        public static void Main() {
-            var lines = Console.ReadLine().Split();
+        public static void Solve() {
+            var lines = Console.ReadLine()!.Split();
             int H = Int32.Parse(lines[0]);
             int W = Int32.Parse(lines[1]);
             list = new Dictionary<int, HashSet<int>>();
             visit = new bool[H*W];
             var map = new string[H];
             for(int i=0;i<H;i++) {
-                map[i] = Console.ReadLine();
+                map[i] = Console.ReadLine()!;
             }
 
             for(int i=0;i<H;i++) {

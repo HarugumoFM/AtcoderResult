@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace AtcoderResult.ABC313 {
-    internal class C {
+    class C {
     //.NET 7出の書き方
-        static void Main() {
-            var N = Int32.Parse(Console.ReadLine());
+        static void Solve() {
+            var N = Int32.Parse(Console.ReadLine()!);
 
-            var lines = Console.ReadLine().Split();
+            var lines = Console.ReadLine()!.Split();
 
             var nums = new long[N];
             int index = 0;

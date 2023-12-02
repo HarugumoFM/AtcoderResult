@@ -2,9 +2,8 @@ namespace AtcoderResult.ABC321;
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
-internal class D{
-    public static void Main()
+class D{
+    public static void Solve()
     {
         var line = Console.ReadLine().Split();
 

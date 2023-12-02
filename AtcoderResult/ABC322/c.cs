@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace AtcoderResult.ABC322
 {
-    internal class C
+    class C
     {
-        public static void Main()
+        public static void Solve()
         {
             var line = Console.ReadLine()!.Split();
 

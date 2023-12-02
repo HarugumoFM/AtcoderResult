@@ -1,7 +1,7 @@
 namespace AtcoderResult.ABC330;
 
-internal class C{
-    public static void Main()
+class C{
+    public static void Solve()
     {
         var num = Int64.Parse(Console.ReadLine()!);
         long min = long.MaxValue;
