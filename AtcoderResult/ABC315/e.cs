@@ -6,8 +6,8 @@ namespace AtcoderResult.ABC315
 {
     class E
     {
-         Dictionary<int, HashSet<int>> graph;
-         HashSet<int> visit;
+         Dictionary<int, HashSet<int>>? graph;
+         HashSet<int>? visit;
 
         public void Solve()
         {
@@ -51,10 +51,10 @@ namespace AtcoderResult.ABC315
 
 void search(int n)
 {
-    if (!visit.Contains(n))
+    if (!visit!.Contains(n))
     {
         visit.Add(n);
-        foreach (var num in graph[n])
+        foreach (var num in graph![n])
         {
             if (!visit.Contains(num))
                 search(num);

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 class D{
     public static void Solve()
     {
-        var line = Console.ReadLine().Split();
+        var line = Console.ReadLine()!.Split();
 
         int N = Int32.Parse(line[0]);
 
@@ -13,7 +13,7 @@ class D{
 
         var max = Int64.Parse(line[2]);
 
-        line = Console.ReadLine().Split();
+        line = Console.ReadLine()!.Split();
 
         var A = new long[N];
 
@@ -22,7 +22,7 @@ class D{
             A[i] = num;
         }
 
-        line = Console.ReadLine().Split();
+        line = Console.ReadLine()!.Split();
 
         var list = new List<int>();
 
@@ -58,7 +58,6 @@ class D{
             var sub = max - i;
             if(sub <0)
                 sub = 0;
-            long sum1 = 0;
             sum += (long)subs[sub] * i + sums[subs[sub]] + max * (M-(long)subs[sub]);
         }
 

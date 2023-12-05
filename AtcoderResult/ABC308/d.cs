@@ -4,8 +4,8 @@ using System.Linq;
 
 namespace AtcoderResult.ABC308 {
     class D{
-        static Dictionary<int, HashSet<int>> list;
-        static bool[] visit;
+        static Dictionary<int, HashSet<int>>? list;
+        static bool[]? visit;
         public static void Solve() {
             var lines = Console.ReadLine()!.Split();
             int H = Int32.Parse(lines[0]);
@@ -64,10 +64,10 @@ namespace AtcoderResult.ABC308 {
         
         static void search(int n)
         {
-            if(!visit[n])
+            if(!visit![n])
             {
                 visit[n] = true;
-                if(list.ContainsKey(n)){
+                if(list!.ContainsKey(n)){
                     foreach(var num in list[n]){
                         //Console.WriteLine("n:"+num);
                         if(!visit[num])

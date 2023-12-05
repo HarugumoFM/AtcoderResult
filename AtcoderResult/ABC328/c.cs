@@ -16,7 +16,7 @@ class C{
         char lastS = '1';
 
         for(int i=1;i<=N;i++) {
-            if(S[i-1] == lastS) 
+            if(S![i-1] == lastS) 
                 counts[i] = counts[i-1]+1;
             else
                 counts[i] = counts[i-1];
