@@ -1,7 +1,7 @@
 namespace AtcoderResult.ADT.M20240508;
 
 internal class F {
-    public static void Main() {
+    public static void Solve() {
         var N = Int32.Parse(Console.ReadLine()!);
 
         var A = new int[N];
