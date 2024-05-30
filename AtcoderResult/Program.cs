@@ -1,35 +1,13 @@
-﻿var line = Console.ReadLine().Split();
+﻿var N = Int32.Parse(Console.ReadLine()!);
+var A = new int[2*N+2];
+var line = Console.ReadLine()!.Split();
 
-var S = line[0];
-var N = Int32.Parse(line[1]);
+for(int i=1;i<=N;i++) {
+    var s = Int32.Parse(line[i-1]);
+    A[2*i] = A[s]+1;
+    A[2*i+1] = A[s]+1;
+}
 
-var permutations = GetPermutations(S);
-permutations.Sort();
-Console.WriteLine(permutations[N-1]);
-
-
-List<string> GetPermutations(string input)
-{
-    var results = new List<string>();
-    var exists = new HashSet<string>();
-    if (input.Length == 1)
-    {
-        results.Add(input);
-    }
-    else
-    {
-        for (int i = 0; i < input.Length; i++)
-        {
-            var firstChar = input[i];
-            var charsLeft = input.Substring(0, i) + input.Substring(i + 1);
-            var innerPermutations = GetPermutations(charsLeft);
-            foreach (var permutation in innerPermutations)
-            {
-                if(exists.Contains(firstChar + permutation)) continue;
-                results.Add(firstChar + permutation);
-                exists.Add(firstChar + permutation);
-            }
-        }
-    }
-    return results;
+for(int i=1;i<=2*N+1;i++) {
+    Console.WriteLine(A[i]);
 }
