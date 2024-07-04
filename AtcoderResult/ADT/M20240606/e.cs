@@ -1,5 +1,3 @@
-namespace AtcoderResult.ADT.M20240606;
-
 using System.Text;
 internal class E {
     public static void Solve() {
