@@ -1,4 +1,4 @@
-﻿using AtcoderResult.ADT.M20240704;
+﻿using AtcoderResult.ADT.M20240719;
 
 
-G.Solve();
+F.Solve();
