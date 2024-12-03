@@ -1,3 +1,3 @@
-﻿using AtcoderResult.ADT.M20241126;
+﻿using AtcoderResult.ADT.M20241203;
 
 G.Solve();
