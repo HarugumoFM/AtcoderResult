@@ -2,7 +2,7 @@ namespace AtcoderResult.ADT.M20241203;
 
 internal class E {
     public static void Solve() {
-        var input = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+        var input = Console.ReadLine()!.Split(' ').Select(int.Parse).ToArray();
         var N = input[0];
         var M = input[1];
 
@@ -12,8 +12,8 @@ internal class E {
 
         long count = 0;
         for(int i=0;i<M;i++) {
-            var num = Int32.Parse(Console.ReadLine());
-            var A = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            var num = Int32.Parse(Console.ReadLine()!);
+            var A = Console.ReadLine()!.Split(' ').Select(int.Parse).ToArray();
             foreach(var a in A) {
                 C[i] |= 1 << (a-1);
             }

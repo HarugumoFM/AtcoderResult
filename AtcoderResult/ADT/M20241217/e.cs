@@ -9,7 +9,7 @@ internal class E {
         int min = int.MaxValue;
 
         for(int i=0;i<Q;i++) {
-            var input = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            var input = Console.ReadLine()!.Split().Select(int.Parse).ToArray();
             if(input[0] == 1) {
                 var x = input[1];
                 if(!dic.ContainsKey(x)) {

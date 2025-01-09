@@ -3,7 +3,7 @@ namespace AtcoderResult.ADT.M20241203;
 using System.Text;
 internal class F {
     public static void Solve() {
-        var input = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+        var input = Console.ReadLine()!.Split(' ').Select(int.Parse).ToArray();
         var N = input[0];
         var M = input[1];
 
@@ -11,7 +11,7 @@ internal class F {
 
         for (int i = 0; i < N; i++)
         {
-            var B = Console.ReadLine().ToCharArray();
+            var B = Console.ReadLine()!.ToCharArray();
             for (int j = 0; j < M; j++)
             {
                 A[i, j] = B[j];

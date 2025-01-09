@@ -2,7 +2,7 @@ namespace AtcoderResult.ADT.M20241217;
 
 internal class G {
     public static void Solve() {
-        var S = Console.ReadLine();
+        var S = Console.ReadLine()!;
         var T = new bool[26];
         var dic = new Dictionary<int,HashSet<char>>();
         int level = 0;
