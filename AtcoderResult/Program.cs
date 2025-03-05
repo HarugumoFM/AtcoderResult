@@ -1,41 +1,31 @@
-﻿var inputs = Console.ReadLine().Split().Select(long.Parse).ToArray();
+﻿var Q = Int64.Parse(Console.ReadLine());
 
-var N = inputs[0];
-var A = inputs[1];
-var B = inputs[2];
 
-var allSUM = (1+ N)*N/2;
+for(int i=0;i<Q;i++) {
+    var input = Console.ReadLine().Split(' ').Select(Int64.Parse).ToArray();
+    var N = input[0];
+    var D = input[1];
+    var K = input[2];
+    var couple = LCM(N,D)/D;
+    K--;
+    var s = K/couple;
+    var p = K%couple;
+    var x = (s+p*D)%N;
+    Console.WriteLine(x);
+}
 
-var a1 = N/A;
-long ASUM = 0;
-if(A <= N) ASUM = A*(1+a1)*a1/2;
-else ASUM = 0;
 
-var b1 = N/B; 
-long BSUM = 0;
-if(B <= N) BSUM = B*(1+(N/B))*((N/B))/2;
-else BSUM = 0;
+long LCM (long a, long b)
+{
+    return a * b / GCD(a, b);
+}
 
-var lcm = LCM(A,B);
-var ab1 = N/lcm;
-long ABSUM = 0;
-if(lcm > N) ABSUM = 0;
-else ABSUM = lcm*(1+ab1)*ab1/2;
-
-Console.WriteLine(allSUM - ASUM - BSUM + ABSUM);
-
-long GCD(long a, long b)
-    {
-        while (b != 0)
-        {
-            long temp = b;
-            b = a % b;
-            a = temp;
-        }
-        return a;
+long GCD(long a,long b) {
+    if (a < b) return GCD(b, a);
+    while (b != 0) {
+        var remainder = a % b;
+        a = b;
+        b = remainder;
     }
-
-    long LCM(long a, long b)
-    {
-        return (a / GCD(a, b)) * b;
-    }
+    return a;
+}
