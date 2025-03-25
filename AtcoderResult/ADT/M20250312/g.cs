@@ -1,4 +1,5 @@
-inner class G {
+namespace AtcoderResult.ADT.M20250312;
+internal class G {
     public static void Solve() {
         var inputs = Console.ReadLine().Split(' ').Select(long.Parse).ToArray();
         long N = inputs[0];
