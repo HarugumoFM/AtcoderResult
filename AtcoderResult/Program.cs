@@ -1,36 +1,29 @@
-﻿var inputs = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-var N = inputs[0];
-var x = inputs[1];
-var y = inputs[2];
-var A = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-var setX = new HashSet<int>(inputs);
-var setY = new HashSet<int>(inputs);
-setX.Add(A[0]);
-setY.Add(0);
-for (int i=1; i<N; i++)
+﻿var inputs = Console.ReadLine().Split().Select(long.Parse).ToArray();
+long n = inputs[0];
+long m = inputs[1];
+var set = new HashSet<long>();
+var sums = new long[n + 1];
+var a = Console.ReadLine().Split().Select(long.Parse).ToArray();
+long sum = 0;
+set.Add(0);
+for (int i = 0; i < n; i++)
 {
-    var a = A[i];
-    if(i%2 == 0) {
-        var newSetX = new HashSet<int>();
-        foreach (var x1 in setX) {
-            var x2 = x1 + a;
-            newSetX.Add(x2);
-            x2 = x1 - a;
-            newSetX.Add(x2);
-        }
-        setX = newSetX;
-    } else {
-        var newSetY = new HashSet<int>();
-        foreach (var y1 in setY) {
-            var y2 = y1 + a;
-            newSetY.Add(y2);
-            y2 = y1 - a;
-            newSetY.Add(y2);
-        }
-        setY = newSetY;
+    sum += a[i];
+    sums[i + 1] = sum;
+}
+foreach (var s in sums) {
+    set.Add(s);
+    set.Add(s + sum);
+}
+m = m % sum;
+bool res = false;
+for(int i=0;i<=n;i++) {
+    if (set.Contains(m + sums[i])) {
+        res = true;
+        break;
     }
 }
-if(setX.Contains(x) && setY.Contains(y)) {
+if (res) {
     Console.WriteLine("Yes");
 } else {
     Console.WriteLine("No");
